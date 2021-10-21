@@ -51,5 +51,5 @@ Organization. More data information may mean more precise and accurate analysis,
 
 - What are some other possible tables and/or graphs that we could create?
 
-We could use pie charts/bar graph to see which categories or subcategories are more popular filtered by the successful. A line graph for each subcategory to see the trends for each year. 
+We could use pie charts/bar graph to see which categories or subcategories are more popular filtered by the successful. A line graph for each subcategory to see the trends for each year by using the 'Date Created Conversion' and 'Date Ended Conversion'.
 If Louisa wasn't just interested in the plays/theater category, we could also create a pivot table to see what were the top 3 categories by the amount of successful campaigns. 
