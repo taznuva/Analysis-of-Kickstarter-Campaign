@@ -38,14 +38,18 @@ One of the challenges that I encountered was using the COUNTIFS() for the Delive
 ## Results
 
 - What are two conclusions you can draw about the Theater Outcomes based on Launch Date?
+
 May and June had the highest amount of successful campaigns which means that early summer is the best time for Louise to run a theater campaign and that the winter months, more specifically December, are not the most ideal. For month of December, I assume less is donated to campaigns since its the holiday season and people are spending their money more on gifts and other materials than donating to theater. The theater category also had the least amount of canceled campaigns throughout the whole year. 
 
 - What can you conclude about the Outcomes based on Goals?
+
 Goals that are more reasonable attainable, for instance, less than $1000, are more likely to be successful than a unrealistic, rather more expensive, goal like more than $40,000. A goal that's less than a $1000 would mean that the average of donations would also be less but more people are willing to donate a few cents than a few dollars. Unless you're just super rich, but that would be considered an outlier in the data. Likewise, the higher the goal amount, the more likely it is to fail due to few or no pledges, in other words, people have to donate more money on average. 
 
 - What are some limitations of this dataset?
+
 Organization. More data information may mean more precise and accurate analysis, but also prone to looking 'messy' and overwhelming which could or may hinder the quality if not managed or organized. 
 
 - What are some other possible tables and/or graphs that we could create?
+
 We could use pie charts/bar graph to see which categories or subcategories are more popular filtered by the successful. A line graph for each subcategory to see the trends for each year. 
 If Louisa wasn't just interested in the plays/theater category, we could also create a pivot table to see what were the top 3 categories by the amount of successful campaigns. 
