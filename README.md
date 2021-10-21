@@ -19,14 +19,19 @@ For this step of the analysis, I started to manually create the table for the ou
 <img width="757" alt="Screen Shot 2021-10-20 at 11 47 14 PM" src="https://user-images.githubusercontent.com/33046642/138208163-403f8e16-cc25-4871-97f6-fbe99e828836.png">
 Next, I used the COUNTIFS() function for the cells with the conditions that each cell met the 'Goal' for each row and the 'Outcome' for each column as well as the subcategory 'plays' called from the Kickstarter worksheet. I copy-pasted the formula for all and only had to change the 'Goal' and 'Outcome'. A sample of the formula is shown below for the first two columns and first two goals:
          For successful outcome and goal less than 1000: 
-      '=COUNTIFS(Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays")'
-         For failed outcome and goal 1000 to 4999:           '=COUNTIFS(Kickstarter!$D:$D,">=1000",Kickstarter!$F:$F,"failed",Kickstarter!$R:$R,"plays",Kickstarter!$D:$D,"<=4999")'
+      ```
+      =COUNTIFS(Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays")
+      ```
+         For failed outcome and goal 1000 to 4999:           ```=COUNTIFS(Kickstarter!$D:$D,">=1000",Kickstarter!$F:$F,"failed",Kickstarter!$R:$R,"plays",Kickstarter!$D:$D,"<=4999")```
 The table should look like this:<img width="382" alt="Screen Shot 2021-10-21 at 12 41 46 AM" src="https://user-images.githubusercontent.com/33046642/138212744-9f09c095-2587-4bf2-a725-0cabcad4ab74.png">
-Then, in cell E2 for Total Projects, I used the SUM() function. 
-
+Then, in cell E2 for Total Projects, I used the SUM() function to add columns (B2+C2+D2) and copied the rest of this column with this formula. 
+         ``` SUM(B2+C2+D2) ```
+And finally, the last three columns was to calculate the percentage for each outcome. I simply divided the part of 'outcome'/ total then formatted the columns into percentage which converted the results into a percent. The final table should look like this:
+ <img width="620" alt="Screen Shot 2021-10-21 at 7 34 07 AM" src="https://user-images.githubusercontent.com/33046642/138268976-4a43373f-9427-4d06-9377-200c53fe84b9.png">
+Then to create the graph, I selected the 'Goals' column and all three 'Percentage' outcomes and inserted a line chart such as below:
+<img width="617" alt="Screen Shot 2021-10-21 at 7 39 18 AM" src="https://user-images.githubusercontent.com/33046642/138269665-4ba5e0a9-5533-4cae-ba20-f5ad30dfa54a.png">
+From looking at the table alone, I can see that campaigns that had funding goals less than 4999 were more likely to be successful and also more realistically achievable than a having a funding goal that surpasses 35000. And even though the 1000 to 4999 goal range had the highest amount of campaigns, the highest percent of success (76%) were from campaigns that were less than 1000. The graph drastically shows the percentage successful and percentage failed for goal 45000 to 49999. And the number of canceled outcomes and percentages came back 0. 
         
-        
-
 ### Challenges and Difficulties Encountered
 One of the challenges that I encountered was using the COUNTIFS() for the Deliverable 2 portion of this assignment. The total count of successful, failed, and canceled for each goal (row) was 1 off. I have double checked on the Kickstarter sheet, filtered on the 'outcomes', 'goal' and 'subcategory' for each and it did not match. I've also checked to see if I wrote the function properly, retyped it on a new sheet, and eventually asked for help from the Learning Assistant. They've also encountered the same issue as I did and told me to ignore the count(off by 1) and resume what I'm doing. Another small challenge was when I made the pivot table for 'Outcomes Based on Launch Date' and the 'Year' column did not populate under the fields. After some trial and error, I found that selecting on the 'Change Data Source' under 'PivotTable Analyze' tab allowed me to extend the original table instead of having to create a whole new table and worksheet again.
 
